@@ -4,6 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+use App\Models\Category;
+use App\Models\Quest;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -13,6 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        Category::factory(10)->create();
+        Quest::factory(10)->create();
     }
 }
